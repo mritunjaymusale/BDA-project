@@ -6,6 +6,7 @@ if len(sys.argv) != 4:
 	print("Usage: python train.py [stock] [window] [episodes]")
 	exit()
 
+# make this accessable through REST
 stock_name, window_size, episode_count = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
 
 agent = Agent(window_size)
